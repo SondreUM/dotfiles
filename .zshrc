@@ -244,21 +244,18 @@ fi
 # dependencies:
 #	sudo apt-get install fonts-powerline
 #	sudo apt-get install dconf-cli
-if [ -f ~/.agnoster.zsh-theme ];
-then
+if [ -f ~/.agnoster.zsh-theme ]; then
     . ~/.agnoster.zsh-theme
 elif [ -f ~/Documents/github/dotfiles/.agnoster.zsh-theme ];
-then
     echo "agnoster theme missing, fetching from git repo"
     ln ~/Documents/github/dotfiles/.agnoster.zsh-theme ~/.agnoster.zsh-theme
 fi
 
 # import custom aliases from git repo
-if [ -f ~/Documents/github/dotfiles/.aliases ];
-then
+if [ -f ~/Documents/github/dotfiles/.aliases ]; then
     . ~/Documents/github/dotfiles/.aliases
 # import custom aliases
-elif [ -f ~/.aliases ]; then
+elif [ -f ~/.aliases ]; 
     . ~/.aliases
 # default ls aliases
 else

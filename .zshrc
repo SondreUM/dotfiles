@@ -246,7 +246,7 @@ fi
 #	sudo apt-get install dconf-cli
 if [ -f ~/.agnoster.zsh-theme ]; then
     . ~/.agnoster.zsh-theme
-elif [ -f ~/Documents/github/dotfiles/.agnoster.zsh-theme ];
+elif [ -f ~/Documents/github/dotfiles/.agnoster.zsh-theme ]; then
     echo "agnoster theme missing, fetching from git repo"
     ln ~/Documents/github/dotfiles/.agnoster.zsh-theme ~/.agnoster.zsh-theme
 fi
@@ -255,7 +255,7 @@ fi
 if [ -f ~/Documents/github/dotfiles/.aliases ]; then
     . ~/Documents/github/dotfiles/.aliases
 # import custom aliases
-elif [ -f ~/.aliases ]; 
+elif [ -f ~/.aliases ]; then
     . ~/.aliases
 # default ls aliases
 else

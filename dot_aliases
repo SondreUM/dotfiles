@@ -1,0 +1,36 @@
+# ls [options]
+# -A almost all, ommit '.' and '..'
+# -c sort by time (with -lt)
+# -g same as -l without file owner
+# -l long list format
+# -o same as -l without group info
+# -R recursive
+# -G with -l don't print group
+# -s file size
+# -k use kiki 1024B instead of 1000B
+alias ll='ls -glF --group-directories-first'
+alias l='ls -gCF'
+alias lr='ls -RAsF'
+alias ld='ls -tgcda'
+alias ls='ls -qa --group-directories-first --color=auto'
+alias la='ls -agcqkskFG --format=verbose'
+
+# custom aliases
+alias nano='nano -l'
+alias GH='~/Documents/repo/'
+alias cGH='cd ~/Documents/repo/'
+alias cr='cd ~/Documents/repo/'
+alias DEV='distrobox enter dev'
+alias sDEV='distrobox stop dev'
+alias GP='git pull'
+alias GS='git status'
+alias GA='git add .'
+alias GF='git fetch'
+alias UP='sudo apt update && sudo apt upgrade -y'
+alias UPF='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias rcUP='cp -url ~/Documents/repo/dotfiles/.agnoster.zsh-theme ~/Documents/repo/dotfiles/.aliases ~/Documents/repo/dotfiles/.bashrc ~/Documents/repo/dotfiles/.zshrc ~'
+alias DOWN='sudo apt upgrade -y && shutdown now'

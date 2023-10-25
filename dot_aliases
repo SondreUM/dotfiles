@@ -1,3 +1,4 @@
+## 
 # ls [options]
 # -A almost all, ommit '.' and '..'
 # -c sort by time (with -lt)
@@ -15,22 +16,26 @@ alias ld='ls -tgcda'
 alias ls='ls -qa --group-directories-first --color=auto'
 alias la='ls -agcqkskFG --format=verbose'
 
-# custom aliases
-alias nano='nano -l'
+## fs 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 alias GH='~/Documents/repo/'
-alias cGH='cd ~/Documents/repo/'
 alias cr='cd ~/Documents/repo/'
+alias cGH='cd ~/Documents/repo/'
+alias cp='cp -v'
+alias mv='mv -v'
+
+# custom application aliases
 alias DEV='distrobox enter dev'
 alias sDEV='distrobox stop dev'
+alias lz='lazygit'
 alias GP='git pull'
 alias GS='git status'
 alias GA='git add .'
 alias GF='git fetch'
+
+# system aliases
 alias UP='sudo apt update && sudo apt upgrade -y'
-alias UPF='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias cp='cp -iv'
-alias mv='mv -iv'
-alias rcUP='cp -url ~/Documents/repo/dotfiles/.agnoster.zsh-theme ~/Documents/repo/dotfiles/.aliases ~/Documents/repo/dotfiles/.bashrc ~/Documents/repo/dotfiles/.zshrc ~'
+alias UPF='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && flatpak update -y'
 alias DOWN='sudo apt upgrade -y && shutdown now'

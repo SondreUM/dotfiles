@@ -1,4 +1,9 @@
 # This is Git's per-user configuration file.
+
+# import local config, containing e.g. username and email
+[include]
+    path = ~/.gitconfig.local
+
 [user]
 #	name = 
 #	email = 

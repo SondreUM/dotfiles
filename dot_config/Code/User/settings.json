@@ -1,0 +1,139 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.cursorBlinking": "solid",
+    "python.defaultInterpreterPath": "C:\\Users\\sondr\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "git.suggestSmartCommit": false,
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.clang_format_style": "file",
+    "workbench.editorAssociations": {
+        "*.given": "hexEditor.hexedit",
+        "*.img": "hexEditor.hexedit",
+        "*.bin": "hexEditor.hexedit",
+        "*.hex": "hexEditor.hexedit",
+        "*.db": "default",
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "git.confirmSync": false,
+    "hexeditor.columnWidth": 16,
+    "hexeditor.showDecodedText": true,
+    "explorer.confirmDragAndDrop": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "telemetry.telemetryLevel": "off",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.path": "/home/sondre/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu (WSL)": {
+            "path": "C:\\Windows\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "settingsSync.ignoredExtensions": [
+        "ms-vscode-remote.remote-wsl",
+        "ms-vsliveshare.vsliveshare"
+    ],
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": false,
+        "markdown": true
+    },
+    "doxdocgen.generic.authorEmail": "https://github.com/SondreUM",
+    "doxdocgen.generic.authorName": "SUM",
+    "doxdocgen.generic.dateFormat": "YYYY-MM-DD",
+    "rust-analyzer.completion.callable.snippets": "add_parentheses",
+    "rust-analyzer.completion.postfix.enable": false,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "editor.inlineSuggest.enabled": true,
+    "workbench.startupEditor": "none",
+    "rust-analyzer.check.command": "clippy",
+    "git.autofetch": true,
+    "[c]": {
+        "editor.IndentWidth": 4,
+        "editor.tabSize": 4,
+        "editor.indentSize": "tabSize",
+        "editor.insertSpaces": true,
+        "editor.bracketPairColorization.enabled": true,
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    },
+    "black-formatter.args": [
+        "--line-length",
+        "100"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+    },
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.inlayHints.variableTypes": true,
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "files.autoSave": "onFocusChange",
+    "editor.rulers": [
+        120
+    ],
+    "editor.tabCompletion": "on",
+    "C_Cpp.autocompleteAddParentheses": true,
+    "explorer.confirmDelete": false,
+    "C_Cpp.clang_format_sortIncludes": true,
+    "C_Cpp.formatting": "clangFormat",
+    "C_Cpp.vcFormat.indent.braces": true,
+    "editor.tabSize": 4,
+    "editor.indentSize": "tabSize",
+    "python.analysis.inlayHints.callArgumentNames": "all",
+    "files.associations": {
+        ".clang-format": "plaintext"
+    },
+    "editor.cursorStyle": "block",
+    "github.copilot.advanced": {},
+    "[xml]": {
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
+    },
+    "update.showReleaseNotes": false,
+    "window.zoomLevel": 1,
+    "isort.check": true,
+    "latex-workshop.bibtex-format.sort.enabled": true,
+    "latex-workshop.bibtex-format.trailingComma": true,
+    "latex-workshop.intellisense.package.dirs": [
+        "styles"
+    ],
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.autoBuild.interval": 2000,
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    "workbench.settings.applyToAllProfiles": [],
+    "python.analysis.autoImportCompletions": true,
+    "C_Cpp.clang_format_fallbackStyle": "Microsoft",
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications",
+    "json.schemas": [],
+    "github.copilot.editor.enableAutoCompletions": true,
+}

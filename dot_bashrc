@@ -119,9 +119,9 @@ plugins=(
 # Which plugins would you like to conditionally load? (plugins can be found in ~/.oh-my-bash/plugins/*)
 # Custom plugins may be added to ~/.oh-my-bash/custom/plugins/
 # Example format:
-#if [ "$DISPLAY" ] || [ "$SSH" ]; then
-#    plugins+=(tmux-autoattach)
-#fi
+if [ "$DISPLAY" ] || [ "$SSH" ]; then
+    plugins+=(tmux-autoattach)
+fi
 
 source "$OSH"/oh-my-bash.sh
 
@@ -154,4 +154,8 @@ export SSH_KEY_PATH="~/.ssh/"
 # alias ohmybash="mate ~/.oh-my-bash"
 if [ -f ~/.aliases ]; then
     . ~/.aliases
+fi
+# rust env
+if [ -f $HOME/.cargo/env ]; then
+   . "$HOME/.cargo/env"
 fi

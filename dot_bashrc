@@ -1,7 +1,7 @@
 # Enable the subsequent settings only in interactive sessions
 case $- in
-  *i*) ;;
-    *) return;;
+*i*) ;;
+*) return ;;
 esac
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -14,7 +14,6 @@ shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
-
 
 # Path to your oh-my-bash installation.
 export OSH='/home/sondre/.oh-my-bash'
@@ -85,7 +84,7 @@ ENABLE_CORRECTION="true"
 OMB_USE_SUDO=true
 
 # To enable/disable display of Python virtualenv and condaenv
-OMB_PROMPT_SHOW_PYTHON_VENV=true  # enable
+OMB_PROMPT_SHOW_PYTHON_VENV=true # enable
 # OMB_PROMPT_SHOW_PYTHON_VENV=false # disable
 
 # Which completions would you like to load? (completions can be found in ~/.oh-my-bash/completions/*)
@@ -120,7 +119,7 @@ plugins=(
 # Custom plugins may be added to ~/.oh-my-bash/custom/plugins/
 # Example format:
 if [ "$DISPLAY" ] || [ "$SSH" ]; then
-    plugins+=(tmux-autoattach)
+  plugins+=(tmux-autoattach)
 fi
 
 source "$OSH"/oh-my-bash.sh
@@ -153,8 +152,9 @@ export SSH_KEY_PATH="~/.ssh/"
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
 if [ -f ~/.aliases ]; then
-    . ~/.aliases
+  . ~/.aliases
 fi
 # rust env
 if [ -f $HOME/.cargo/env ]; then
-   . "$HOME/.cargo/env"
+  . "$HOME/.cargo/env"
+fi

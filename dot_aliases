@@ -1,4 +1,4 @@
-## 
+##
 # ls [options]
 # -A almost all, ommit '.' and '..'
 # -c sort by time (with -lt)
@@ -9,20 +9,20 @@
 # -G with -l don't print group
 # -s file size
 # -k use kiki 1024B instead of 1000B
-alias ll='ls -glF --group-directories-first'
+alias ll='ls -glFhk --group-directories-first'
 alias l='ls -gCF'
 alias lr='ls -RAsF'
-alias ld='ls -tgcda'
-alias ls='ls -qa --group-directories-first --color=auto'
-alias la='ls -agcqkskFG --format=verbose'
+alias ld='ls -tgcdA'
+alias ls='ls -qA --group-directories-first --color=auto'
+alias la='ls -agcqhksFG --format=verbose'
 
-## fs 
+## fs
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias GH='~/Documents/repo/'
+alias cdl='cd ~/Downloads/'
 alias cr='cd ~/Documents/repo/'
-alias cGH='cd ~/Documents/repo/'
+alias GH='~/Documents/repo/'
 alias cp='cp -v'
 alias mv='mv -v'
 alias py='python3'
@@ -43,7 +43,7 @@ alias TD='sudo tailscale down'
 
 # system aliases
 alias UP='sudo apt update && sudo apt upgrade -y'
-alias UPF='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && flatpak update -y'
+alias UPF='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y'
 alias UPfp='flatpak update -y'
 alias DOWN='sudo apt upgrade -y && shutdown now'
 alias nslookup='resolvectl resolve'

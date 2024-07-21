@@ -2,9 +2,8 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.cursorBlinking": "solid",
-    "python.defaultInterpreterPath": "C:\\Users\\sondr\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
     "git.suggestSmartCommit": false,
-    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.errorSquiggles": "enabled",
     "C_Cpp.clang_format_style": "file",
     "workbench.editorAssociations": {
         "*.given": "hexEditor.hexedit",
@@ -23,7 +22,7 @@
     "C_Cpp.intelliSenseEngine": "disabled",
     "clangd.path": "/home/sondre/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
             "source": "PowerShell",
@@ -70,7 +69,6 @@
     "rust-analyzer.check.command": "clippy",
     "git.autofetch": true,
     "[c]": {
-        "editor.IndentWidth": 4,
         "editor.tabSize": 4,
         "editor.indentSize": "tabSize",
         "editor.insertSpaces": true,
@@ -79,24 +77,35 @@
     },
     "black-formatter.args": [
         "--line-length",
-        "100"
+        "79",
+        "--target-version",
+        "py311",
+    ],
+    "isort.args": [
+        "--profile",
+        "black",
+        "--line-length",
+        "79",
     ],
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
     },
     "python.analysis.autoFormatStrings": true,
     "python.analysis.completeFunctionParens": true,
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.inlayHints.pytestParameters": true,
-    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.typeCheckingMode": "standard",
     "python.analysis.inlayHints.variableTypes": true,
     "[rust]": {
         "editor.defaultFormatter": "rust-lang.rust-analyzer"
     },
     "files.autoSave": "onFocusChange",
     "editor.rulers": [
-        120
+        79
     ],
     "editor.tabCompletion": "on",
     "C_Cpp.autocompleteAddParentheses": true,
@@ -106,6 +115,7 @@
     "C_Cpp.vcFormat.indent.braces": true,
     "editor.tabSize": 4,
     "editor.indentSize": "tabSize",
+    "editor.insertSpaces": true,
     "python.analysis.inlayHints.callArgumentNames": "all",
     "files.associations": {
         ".clang-format": "plaintext"
@@ -133,7 +143,10 @@
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
     "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "modifications",
     "json.schemas": [],
     "github.copilot.editor.enableAutoCompletions": true,
+    "python.experiments.enabled": false,
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
 }

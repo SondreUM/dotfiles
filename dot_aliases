@@ -1,4 +1,4 @@
-## 
+##
 # ls [options]
 # -A almost all, ommit '.' and '..'
 # -c sort by time (with -lt)
@@ -16,7 +16,7 @@ alias ld='ls -tgcda'
 alias ls='ls -qa --group-directories-first --color=auto'
 alias la='ls -agcqkskFG --format=verbose'
 
-## fs 
+## fs
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -34,6 +34,7 @@ alias sDEV='distrobox stop dev'
 alias lz='lazygit'
 alias lzd='sudo docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v $HOME/.lazydocker/config:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
 alias GP='git pull'
+alias PA='find . -name .git -print -execdir git pull \;'
 alias GS='git status'
 alias GA='git add .'
 alias GF='git fetch'
